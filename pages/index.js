@@ -12,65 +12,98 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
+import HeroSection from './components/hero/HeroSection';
+import Grid from './components/gallery/Grid';
+import HeroLogo from './components/hero/HeroLogo';
 
 
+
+
+// export default function Index() {
+//   const MainStyle = {
+//     overflowX: 'hidden',
+//   };
+
+//   const companyTitle = {
+//     textAlign: 'center',
+//     fontFamily: 'avenir',
+//   };
+
+//   const copy = {
+//     textAlign: 'center',
+//     fontSize: '30px',
+//     fontFamily: 'avenir',
+//   };
+
+//   return (
+//     <BaseLayout>
+//       <div style={MainStyle}>
+//         <React.Fragment>
+//           <CssBaseline />
+//           <Container maxWidth="lg">
+//             <br></br>
+
+//             <center>
+//               {/* <Image
+//               src={Logo}
+//               alt="Description of Image"
+//               width={300}
+//               height={75}
+//             /> */}
+//             </center>
+//             <br></br>
+//             <br></br>
+
+//             <br></br>
+//             <center>
+//               <HeroSection />
+//             </center>
+
+//           </Container>
+//         </React.Fragment>
+//         <div>
+
+//           <Grid />
+
+//         </div>
+//       </div>
+//     </BaseLayout>
+//   );
+// }
 
 export default function Index() {
-  const MainStyle = {
-    overflowX: 'hidden',
+  const mainStyle = {
+    overflowX: 'hidden', // Prevent horizontal overflow
   };
 
-  const companyTitle = {
+  const companyTitleStyle = {
     textAlign: 'center',
-    fontFamily: 'avenir',
+    fontFamily: 'Avenir, sans-serif', // Added fallback font
   };
 
-  const copy = {
-    textAlign: 'center',
-    fontSize: '30px',
-    fontFamily: 'avenir',
-  };
+
   return (
     <BaseLayout>
-    <div style={MainStyle}>
-      <React.Fragment>
+      <div style={mainStyle}>
+
         <CssBaseline />
+        
         <Container maxWidth="lg">
-          <br></br>
-          <br></br>
-          <center>
-            {/* <Image
-              src={Logo}
-              alt="Description of Image"
-              width={300}
-              height={75}
-            /> */}
-          </center>
-          <br></br>
-          <br></br>
-          <h2 style={companyTitle}>
-          Cyn hamm Consulting
-          </h2>
-          <div style={copy}>
-          Unlock Your Potential with Cyn hamm Consulting: Diverse Expertise to Catapult Your Career and Business to New Heights! Join me for transformative public speaking engagements, personalized career coaching, strategic business program planning sessions, professional photography services, and in-depth peer writing reviews. Begin your journey to success with Cyn hamm Consulting today – Where Your Vision Meets Expert Execution.
 
+          <br></br>
+          <br></br>
+
+          <div style={companyTitleStyle}></div>
+
+          <div style={{ marginTop: '2rem' }}>
+            <HeroSection />
+            <Grid />
           </div>
-          <br></br>
-          <center>
-            <Link href="https://calendly.com/cynhamm/30min">
-            <Button variant="contained" color="primary" type="submit">
-        Schedule Some Time
-      </Button>
-            </Link>
-
-          </center>
 
         </Container>
-      </React.Fragment>
-      <div>
 
       </div>
-    </div>
+
     </BaseLayout>
   );
 }

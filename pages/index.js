@@ -14,7 +14,6 @@ import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import HeroSection from './components/hero/HeroSection';
 import Grid from './components/gallery/Grid';
-import HeroLogo from './components/hero/HeroLogo';
 
 
 
@@ -87,7 +86,7 @@ export default function Index() {
       <div style={mainStyle}>
 
         <CssBaseline />
-        
+
         <Container maxWidth="lg">
 
           <br></br>

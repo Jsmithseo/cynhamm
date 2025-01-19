@@ -16,3 +16,10 @@
 .hero-button:hover {
     background-color: #e0a800;
 }
+
+@media (max-width: 768px) {
+    .full-height-on-md {
+      height: auto !important;
+      min-height: 300px;
+    }
+  }

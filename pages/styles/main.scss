@@ -1,5 +1,25 @@
 .brandName {
     color: #000;
-    font-weight: 700;
-    font-family: avenir;
+    font-weight: 500;
+    font-family: 'avenir',sans-serif;
+   
 }
+.yellow {
+    background-color: #FEE400;
+}
+
+.hero-button-and-header-section {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.hero-button:hover {
+    background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+    .full-height-on-md {
+      height: auto !important;
+      min-height: 300px;
+    }
+  }

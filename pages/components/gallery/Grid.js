@@ -15,7 +15,6 @@ const Grid = () => {
               alt="Image 1"
               fill
               style={{ objectFit: "cover" }}
-              priority
             />
           </div>
         </div>

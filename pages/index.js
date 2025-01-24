@@ -14,6 +14,7 @@ import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import HeroSection from './components/hero/HeroSection';
 import Grid from './components/gallery/Grid';
+import AboutSection from './components/about/AboutSection';
 
 
 
@@ -72,7 +73,7 @@ import Grid from './components/gallery/Grid';
 
 export default function Index() {
   const mainStyle = {
-    overflowX: 'hidden', // Prevent horizontal overflow
+    overflowX: 'hidden', 
   };
 
   const companyTitleStyle = {
@@ -94,11 +95,11 @@ export default function Index() {
 
           <div style={companyTitleStyle}></div>
 
-          <div style={{ marginTop: '2rem' }}>
+          <div>
             <HeroSection />
             <Grid />
+            <AboutSection />
           </div>
-
         </Container>
 
       </div>

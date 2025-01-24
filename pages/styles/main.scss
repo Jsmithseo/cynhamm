@@ -1,16 +1,20 @@
 .brandName {
     color: #000;
     font-weight: 500;
-    font-family: 'avenir',sans-serif;
-   
+    font-family: 'avenir', sans-serif;
 }
+
 .yellow {
     background-color: #FEE400;
 }
 
+.text-center {
+    align-items: center;
+}
+
 .hero-button-and-header-section {
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .hero-button:hover {
@@ -19,7 +23,102 @@
 
 @media (max-width: 768px) {
     .full-height-on-md {
-      height: auto !important;
-      min-height: 300px;
+        height: auto !important;
+        min-height: 300px;
     }
-  }
+}
+
+.accordion-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.accordion-item {
+    margin: 0;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.accordion-header:hover {
+    background-color: #f9f9f9;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.accordion-header span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.accordion-body {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.divider {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.accordion-item:last-child .divider {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    width: 100%;
+    height: auto;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.content-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.about-title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.about-paragraph {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.accordion-wrapper {
+    margin-top: 20px;
+}
+
+.image-area {
+    max-width: 400px;
+    margin: 0 auto;
+}
